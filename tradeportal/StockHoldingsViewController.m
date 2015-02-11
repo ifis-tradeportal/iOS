@@ -58,11 +58,9 @@ OrderEntryModel *em;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if ([stockArray count]==0) {
-        stockCode.enabled = NO;
+    if ([stockList count]==0) {
         return 4;
     }
-    stockCode.enabled = YES;
     return [stockList count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -235,6 +233,7 @@ OrderEntryModel *em;
 
 - (void)LoadStocksForAccount:(NSString *)account {
     self.parseURL = @"loadStocks";
+    stockCode.text =@"";
     NSString *soapRequest = [NSString stringWithFormat:
                              @"<?xml version=\"1.0\" encoding=\"utf-8\"?>"
                              "<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">"

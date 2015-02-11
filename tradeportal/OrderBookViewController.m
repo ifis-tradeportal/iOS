@@ -236,10 +236,10 @@ OrderBookTableViewCell *header;
             [cell setBackgroundColor:iBackColorGreen];
         }
         else if (![[[dummy objectAtIndex:0]status] isEqualToString:[[orders objectAtIndex:[indexPath row]]status]]) {
-            if (![[[orders objectAtIndex:[indexPath row]]status] rangeOfString:@"Cancel"].location == NSNotFound) {
+            if (![[[orders objectAtIndex:[indexPath row]]status] rangeOfString:@"Cancel"].length == 0) {
                 [cell setBackgroundColor:iBackColorRed];
             }
-            else if (![[[orders objectAtIndex:[indexPath row]]status] rangeOfString:@"Reject"].location == NSNotFound) {
+            else if (![[[orders objectAtIndex:[indexPath row]]status] rangeOfString:@"Reject"].length == 0) {
                 [cell setBackgroundColor:iBackColorRed];
             }
             else{
