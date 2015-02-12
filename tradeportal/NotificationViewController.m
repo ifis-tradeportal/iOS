@@ -2,7 +2,7 @@
 //  NotificationViewController.m
 //  TradePortal
 //
-//  Created by intern on 22/1/15.
+//  Created by Nagarajan Sathish on 22/1/15.
 //
 //
 

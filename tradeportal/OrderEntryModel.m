@@ -2,7 +2,7 @@
 //  OrderEntryModel.m
 //  TradePortal
 //
-//  Created by intern on 29/1/15.
+//  Created by Nagarajan Sathish on 29/1/15.
 //
 //
 

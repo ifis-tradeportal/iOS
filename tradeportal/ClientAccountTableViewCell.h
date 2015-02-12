@@ -2,7 +2,7 @@
 //  ClientAccountTableViewCell.h
 //  TradePortal
 //
-//  Created by intern on 26/1/15.
+//  Created by Nagarajan Sathish on 26/1/15.
 //
 //
 
